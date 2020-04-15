@@ -1,0 +1,14 @@
+Bill of Materials DIY digital differential pressure sensor v0.3
+The autor of the design and this document is @Andreas_IBZ (Telegram) and is licenced under CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+version 13/04/2020
+
+1 x ESP32 (or equivalent that could work with Arduino-flavoured Code)
+1 x loadcell 1 kg range (aliexpress, banggood, ...)
+1 x HX711 module (aliexpress, banggood, ... - for normal they come in a package with the loadcell)
+2 x Washers d12/d4.3
+2 x Sealing O-Ring d18x1.5 (alternatively fill notch in part "seal_support" with plenty of silicone)
+various Hex nuts M3 & M4
+various Screws M3 & M4
+threaded bar M4 (or 60 mm long screw M4)
+examination gloves to use as material for membranes
+silicone or sealing glue to seal contact surfaces of membranes
