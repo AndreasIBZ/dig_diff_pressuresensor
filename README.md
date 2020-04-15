@@ -1,6 +1,11 @@
 # digital differential pressure sensor
 with <=1.5 Pa resolution and 1500 Pa full scale pressure
 
+<p>
+  <img src="https://github.com/AndreasIBZ/dig_diff_pressuresensor/blob/master/screenshot_pressure_sensor.JPG" width="200" title="Pressuresensor">
+  <img src="https://github.com/AndreasIBZ/dig_diff_pressuresensor/blob/master/screenshot_section_pressure_sensor.JPG" width="200" title="Pressuresensor Section">
+</p>
+
 ## Credits to
 + bogde on GitHub for this nice Arduino-library: https://github.com/bogde/HX711 
 + circuits4you.com for the Arduino-Code to upate values on a webpage via AJAX-call: https://circuits4you.com/2018/11/20/web-server-on-esp32-how-to-update-and-display-sensor-values/
