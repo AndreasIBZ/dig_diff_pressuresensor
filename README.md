@@ -14,7 +14,7 @@ with <=1.5 Pa resolution and 1500 Pa full scale pressure
 Different pressures are passed to either side of a membrane where the difference of pressures are converted into a differential force. A loadcell (frequently used in electronic scales) converts this differential force into electrical signal (differential voltage). Through means of amplification and ADC circuitry this differential voltage is converted to a digital signal which is processed by an ESP32. 
 
 ## Assembly
-Check the videos to get an idea of the assembly process. Generally speaking you would need some screws and nuts of size M3 and M4, a nitril or latex glove to use as membrane material, a 1 kg loadcell with HX711 module and an ESP32. 
+Check the videos to get an idea of the assembly process. Generally speaking you would need some screws and nuts of size M3 and M4, a nitril or latex glove to use as membrane material, a 1 kg loadcell with HX711 module and an ESP32. Check the Bill of Materials (BOM) for further information. Special attention is needed to adjust the threaded bar in respect to the membrane supports (nut M4 + washer pressing the small membrane against the membrane support): after correct assembly the loadcell mustn't put any force on the membrane and vice versa! Furthermore the smaller adjustment screw mustn't squeeze the loadcell against the threaded bar - round a bit the contact surfaces and leave a tiny gap of ~0.1 mm on either side and you should be fine.
 
 ## Usage
 + Wire up loadcell to HX711 module. Most likely like this: + red: E+, black: E-, green: A+, white: A-
