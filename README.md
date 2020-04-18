@@ -30,7 +30,7 @@ Given a membrane with diameter of 90 mm - minus the d 16 mm for sealing the thre
 In the Arduino code supplied there's a routine to get the values for calculating the calibration factor that has to be passed to the HX711 library. See also: https://github.com/bogde/HX711
 + Rough calibration can be done applying known weights to the loadcell in horizontal position and do the math considering the  active membrane surface: 6161 mm² (90² - 16²)*pi/4. 
 + Far more accurate however will be applying known pressures to the sensor - think of water columns: 1 cm H20 ~ 100 Pa. 
-+ If used with together with a flow sensor like https://github.com/AndreasIBZ/bidir_flowsensor you can skip "known weight calibration" and use directly "known flows" instead. The calibration factor caculated like this will be related directly to the flow causing the ESP32 spitting out flow values throuh the serial.
++ If used with together with a flow sensor like https://github.com/AndreasIBZ/bidir_flowsensor you should skip "known weight calibration" and use directly "known flows" instead. As pressure drop is proportional to velocity to the power of 2, calculating with a constant linear factor like used in the HX711 library isn't possible. To make the ESP32 spitting out flow values throuh the serial you have to add some calculation like y = ax² + bx + c, where x is the flow and y the pressure.
 
 ## Limits of this design
 If 3D-printed achievable accuracy will vary due to varying geometry quality. Special attention has to be paid to leak testing of 3D-printed parts and the whole assembly. The membrane material is a very thin elastomer (e.g. from a nitril or latex glove) whose long-term stability is crucial for the function. 
